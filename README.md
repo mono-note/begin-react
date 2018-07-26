@@ -190,9 +190,13 @@ module: {
 
 ## Making CSS modular
 
-class name will be scoped locally and specific to only the component in question, we can provide some options to css-loader
+class name will be scoped locally and specific to only the component in question,
+we can provide some options to css-loader in **webpack.config.js**
 
 ```bash
+rules: [{
+ ...
+},
 {
   test: /\.css$/,
   use: [{
@@ -235,5 +239,6 @@ module.exports = {
   }
 }
 ```
-
-**or clone this to your project**
+after that run **npm run start**
+or
+## clone this to your project
